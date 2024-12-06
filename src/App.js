@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Menu from './menu/Menu';
+import {Routes, Route} from "react-router"
+import Accueil from './Accueil/Accueil';
+import Emplacement from './emplacement/Emplacement';
+import Telecharger from './Telecharger/Telecharger';
+import Contact from './Contact/Contact';
+import Apropos from './Apropos/Apropos';
+import "./App.css"
+import Footer from './Footer/Footer';
+import members from './membre';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Menu/>
+     <Routes>
+      <Route path='/accueil' element={<Accueil/>}/>
+      <Route path='/emplacement' element={<Emplacement/>}/>
+      <Route path='/A-propos' element={<Apropos members={members}/>}/>
+      <Route path='/download' element={<Telecharger/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+     </Routes>  
+     <Footer/>   
     </div>
   );
 }

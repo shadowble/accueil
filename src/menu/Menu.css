@@ -1,0 +1,121 @@
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Occupe toute la largeur */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Menu à droite */
+  .menu-droite {
+    display: flex;
+    align-items: center; /* Aligne verticalement les éléments */
+  }
+  
+  /* Style des éléments du menu */
+  .menuItem {
+    margin: 0 10px; /* Espacement horizontal */
+  }
+  
+  /* Style des liens */
+  .menuItem .link{
+    color: #003DCC; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Effet au survol */
+    padding: 10px;
+    font-weight: bold;
+    height: 50px;
+  }
+  .download{
+    background-color: #003DCC;
+    color: #F9ECDC;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .menuItem .link:hover {
+    color: #F9ECDC;
+    background-color: #003DCC;
+    background-size: 20px;
+    border-radius: 30px;
+  }
+ 
+  /* Logo */
+  .logo {
+    height: 50px; /* Hauteur du logo */
+    width: auto; 
+    margin-right: 15px; /* Espacement à droite */
+  }
+  
+  .menu-toggle {
+    display: none; /* Cacher le bouton par défaut */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .burger-icon {
+    height: 30px;
+    width: auto;
+  }
+  
+  /* Responsivité */
+  @media (max-width:845px){
+    .menuItem .link{
+    font-size: 14px;
+    padding: 7px;
+    height: 45px;
+    }
+    .download{
+      padding: 7px;
+    }
+  }
+  @media (max-width: 768px) {
+    /* Cacher le menu à droite par défaut */
+    .menu-droite {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #F9ECDC;
+      width: 100%;
+      padding: 20px 0;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+  
+    .menu-droite.show {
+      display: flex; /* Afficher le menu si actif */
+    }
+  
+    .menuItem {
+      margin: 10px 0; /* Espacement entre les liens */
+      text-align: center;
+    }
+  
+    .menu-toggle {
+      display: block; /* Afficher le bouton burger */
+    }
+  
+    .logo {
+      height: 40px; /* Réduire la taille du logo */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajustements supplémentaires pour les petits écrans */
+    .link, .download {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .burger-icon {
+      height: 25px;
+    }
+  }
+  

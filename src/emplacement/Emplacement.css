@@ -1,0 +1,28 @@
+/* Conteneur principal */
+.emplacement-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Carte */
+  .map {
+    width: 80%; /* Occupe 80% de la largeur */
+    height: 80%; /* Occupe 80% de la hauteur */
+    border: 2px solid #ccc; /* Bordure légère */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  }
+  
+  /* Texte de chargement */
+  .loading-text {
+    font-size: 18px;
+    color: #555;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  

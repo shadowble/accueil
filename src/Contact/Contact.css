@@ -1,0 +1,83 @@
+/* Conteneur principal */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Titre */
+  .contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #003DCC;
+    margin-bottom: 10px;
+  }
+  
+  /* Texte introductif */
+  .contact-text {
+    font-size: 18px;
+    color: #003DCC;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Formulaire */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: #f9f9f9; */
+    border: 1px solid #003DCC;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Champs du formulaire */
+  .form-group {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    color: #003DCC;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #003DCC;
+    background-color:#F9ECDC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border: 2px solid #003DCC;
+    outline: none;
+  }
+  
+  /* Bouton */
+  .contact-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #003DCC;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    color: #003DCC;
+    background-color: #fff;
+  }
+  
