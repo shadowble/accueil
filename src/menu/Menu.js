@@ -16,14 +16,14 @@ export default function  Menu() {
       <nav className='nav'>
       <ul className='menu'>
             <div className='logoItem'>
-              <a href="/accueil" className='link'><img src={Access} className='logo' alt="" /></a>
+              <a href="/" className='link'><img src={Access} className='logo' alt="" /></a>
             </div>
             <button className="menu-toggle" onClick={toggleMenu}>
             <img src={Burger} alt="Menu" className="burger-icon" />
           </button>
         <div className={`menu-droite ${menuOpen ? 'show' : ''}`}>
             <li className='menuItem'>
-              <a href="/accueil" className='link'>Accueil </a>
+              <a href="/" className='link'>Accueil </a>
             </li>
             <li className='menuItem'>
               <a href="emplacement" className='link'>Emplacement</a>
